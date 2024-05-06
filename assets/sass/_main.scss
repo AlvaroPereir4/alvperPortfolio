@@ -1,0 +1,57 @@
+.main-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 85px;
+    margin-bottom: 10px;
+    .bold {
+      font-weight: 600;
+    }
+  }
+
+  .bg {
+    background: $color-secondary;
+    color: $color-main;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.main-content.top {
+  height: calc(100vh - 90px);
+}
+
+.main-content.bottom {
+  background: $bg-secondary;
+  color: $color-secondary;
+}
+
+@include responsive-min-desktop {
+  .main-content {
+    h2 {
+      font-size: 70px;
+    }
+  }
+}
+
+@include responsive-tablet {
+  .main-content {
+    h2 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@include responsive-mobile {
+  .main-content.top {
+    height: calc(100vh - 70px);
+  }
+}

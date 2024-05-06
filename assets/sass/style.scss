@@ -1,0 +1,33 @@
+@import "variables", "reset", "header", "main", "social", "projects", "contact",
+  "back-top";
+
+* {
+  // border: 1px solid red;
+}
+
+body {
+  background: $bg-main;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@include responsive-desktop {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@include responsive-tablet {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@include responsive-mobile {
+  .container {
+    max-width: 320px;
+  }
+}

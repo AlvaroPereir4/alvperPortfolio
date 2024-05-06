@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvaro Pereira | Portfólio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="author" content="Alvaro Pereira (@jotavetech)" />
+    <meta
+      name="description"
+      content="Portfólio de apresentação e demonstração de projetos."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, NextJS, Postgres, SQL, ReactJS, Typescript, Finances, App, incontrol, jaoincode, jotavetech, NodeJS, TailwindCSS"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <button id="back-top">
+      <img
+        src="assets/img/arrow-top.svg"
+        alt="botão para voltar ao inicio da página"
+      />
+    </button>
+
+    <div id="social" aria-label="Links do github e do linkedin">
+      <a
+        href="https://github.com/AlvaroPereir4"
+        target="_blank"
+        aria-label="Link para o meu perfil do github"
+      >
+        <img src="assets/img/github.svg" alt="Github logo" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/alvaro-pereira-b5b2a8227/"
+        target="_blank"
+        aria-label="Link para meu perfil no linkedin"
+      >
+        <img src="assets/img/linkedin.svg" alt="Linkeding logo" />
+      </a>
+    </div>
+
+    <div class="container">
+      <header id="header">
+        <h1><span>Alvaro Pereira</span>  ~tech</h1>
+        <div>
+          <p id="year">2024</p>
+        </div>
+      </header>
+      <section id="hero" class="main-content top">
+        <h2 aria-label="Descrição de quem eu sou" id="hero-text">
+          Olá, eu sou o
+          <span class="bold">Alvaro Pereira</span>.
+        </h2>
+        <p id="hero-description">Desenvolvedor de software.</p>
+      </section>
+    </div>
+
+    <section
+      id="about"
+      class="main-content bottom"
+      aria-label="Área sobre mim e o que faço"
+    >
+      <div class="container">
+        <h2 id="about-text">
+          Eu <span class="bg">desenvolvo</span>
+          <span class="bold">aplicações que facilitam</span> a sua vida.
+        </h2>
+        <p aria-label="Tecnologias que uso" id="about-description">
+          Usando a combinação de várias tecnologias, Frameworks e Bibliotecas.
+          (Python, SQL, PySpark, Pandas, etc..).
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" aria-label="Área aonde apresento alguns projetos">
+      <ul>
+        <li>
+        </li>
+      </ul>
+    </section>
+    <section id="contact" aria-label="Área para entrar em contato comigo">
+      <footer aria-label="Footer do portfolio com mais links.">
+        <p>
+          <a href="https://github.com/AlvaroPereir4" target="_blank">Alvaro Pereira</a>
+        </p>
+        <nav>
+          <a href="https://github.com/AlvaroPereir4" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/alvaro-pereira-b5b2a8227/" target="_blank"
+            >Linkedin</a>
+        </nav>
+      </footer>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/back-top.js"></script>
+    <script src="./assets/js/languages.js"></script>
+
+    <script>
+      ScrollReveal().reveal("#about .container", { delay: 300, reset: true });
+      ScrollReveal().reveal("#projects li ", { delay: 300 });
+      ScrollReveal().reveal("#projects .right", { delay: 550 });
+    </script>
+  </body>
+</html>

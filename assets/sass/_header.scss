@@ -1,0 +1,53 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+
+  h1 {
+    font-size: 36px;
+    span {
+      font-weight: 600;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    span {
+      cursor: pointer;
+      margin-right: 30px;
+      font-weight: 500;
+      font-size: 12px;
+      opacity: 65%;
+      transition: opacity 0.2s;
+    }
+
+    span:hover {
+      opacity: 100%;
+    }
+
+    p {
+      color: $color-gray;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+@include responsive-mobile {
+  #header {
+    height: 70px;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    div {
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
