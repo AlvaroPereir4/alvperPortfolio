@@ -14,15 +14,15 @@ const getStoredLanguageOnLoad = () => {
 
   if (storedLanguage) setContent(storedLanguage);
   else {
-    localStorage.setItem("language", "english");
-    setContent("english");
+    localStorage.setItem("language", "portuguese");
+    setContent("portuguese");
   }
 };
 
 const changeLanguage = () => {
   const storedLanguage = localStorage.getItem("language");
 
-  if (storedLanguage === "english") {
+  if (storedLanguage === "portuguese") {
     setContent("portuguese");
     localStorage.setItem("language", "portuguese");
   } else {
